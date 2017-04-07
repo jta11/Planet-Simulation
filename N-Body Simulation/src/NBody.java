@@ -16,7 +16,7 @@ public class NBody {
 	private static Clip audioClip;
 	private static ArrayList<Body> planets = new ArrayList<Body>();
 	private static double radius;
-	private static int T = (int) 1000000;
+	//private static int T = (int) 1000000;
 	private static int dt = 25000;
 
 	private static final double G = 6.67 * Math.pow(10, -11);
@@ -51,7 +51,7 @@ public class NBody {
 			e1.printStackTrace();
 		}
 
-		File f = new File("data/chaosBlossom.txt");
+		File f = new File("data/" + StdDraw.getName() + ".txt");
 		try {
 			Scanner input = new Scanner(f);
 			getData(input);

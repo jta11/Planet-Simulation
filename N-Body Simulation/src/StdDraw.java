@@ -130,6 +130,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
     // set of key codes currently pressed down
     private static TreeSet<Integer> keysDown = new TreeSet<Integer>();
   
+    private static String name = "planets";
 
     // not instantiable
     private StdDraw() { }
@@ -211,7 +212,36 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
         menuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,
                                 Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
         menu.add(menuItem1);
+        
+        JMenu patterns = new JMenu("Pattern");
+        menuBar.add(patterns);
+        
+        JMenuItem pattern1 = new JMenuItem("Planets");
+        pattern1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent ev) {
+				name = "planets";
+			}
+		});
+        pattern1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P,
+                Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+        
+        JMenuItem pattern2 = new JMenuItem("Chaos Blossom");
+        pattern2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent ev) {
+				name = "chaosblossom";
+			}
+		});
+        pattern2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C,
+                Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+        
+        patterns.add(pattern1);
+        patterns.add(pattern2);
+        
         return menuBar;
+    }
+    
+    public static String getName() {
+    	return name;
     }
 
 
