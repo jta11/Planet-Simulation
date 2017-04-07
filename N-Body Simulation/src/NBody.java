@@ -51,7 +51,7 @@ public class NBody {
 			e1.printStackTrace();
 		}
 
-		File f = new File("data/awesome.txt");
+		File f = new File("data/chaosBlossom.txt");
 		try {
 			Scanner input = new Scanner(f);
 			getData(input);
@@ -126,6 +126,11 @@ public class NBody {
 
 		while (input.hasNext()) {
 			String xs = input.next();
+			
+			if(xs.equals("Creator"))
+			{
+				break;
+			}
 
 			double x = Double.parseDouble(xs);
 
