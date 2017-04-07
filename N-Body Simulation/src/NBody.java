@@ -51,7 +51,11 @@ public class NBody {
 			e1.printStackTrace();
 		}
 
+<<<<<<< Updated upstream
 		File f = new File("data/" + StdDraw.getName() + ".txt");
+=======
+		File f = new File("data/massive-squirrel-battle.txt");
+>>>>>>> Stashed changes
 		try {
 			Scanner input = new Scanner(f);
 			getData(input);
