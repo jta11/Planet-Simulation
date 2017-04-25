@@ -19,7 +19,8 @@ public class NBody {
 	//private static int T = (int) 1000000;
 	private static int dt = 25000;
 	private static String[] names = {"3body", "8star-rotation", "antimatter", "armageddon", "atom", "awesome", "binary", "binaryStars", "chaosblossom", "dance10", "entropy-universe", "fourellipses", "galaxy", "hypnosis", "illusion", "its-a-trap", "kaleidoscope", "kevin", "massive-squirrel-battle", "planets", "planets-elliptical", "planetsparty", "pluto", "quad-stars", "renegade", "sbh2", "sbh3", "soap-opera", "suninterference", "twin-binaries", "uniform3", "uniform8", "uniform100"};
-
+	private static double[] fx1;
+	private static double[] fy1;
 	private static final double G = 6.67 * Math.pow(10, -11);
 
 	public static void main(String[] args) {
@@ -52,22 +53,23 @@ public class NBody {
 			e1.printStackTrace();
 		}
 
-		File f = new File("data/" + StdDraw.getName() + ".txt");
-		try {
-			Scanner input = new Scanner(f);
-			getData(input);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-
-		double[] fx1 = new double[planets.size()];
-		double[] fy1 = new double[planets.size()];
+		init();
 
 		StdDraw.setXscale(-radius, radius);
 		StdDraw.setYscale(-radius, radius);
 
 		// int currentTime = 0;
 		while (true) {
+			
+			if(StdDraw.getChange())
+			{
+				planets.clear();
+				init();
+				fx1 = new double[planets.size()];
+				fy1 = new double[planets.size()];
+				StdDraw.setChange(false);
+			}
+			
 			for (int count = 0; count < planets.size(); count++) {
 				double fxSum = 0;
 				double fySum = 0;
@@ -117,6 +119,20 @@ public class NBody {
 			// currentTime += dt;
 			StdDraw.show(20);
 		}
+	}
+	
+	public static void init()
+	{
+		File f = new File("data/" + StdDraw.getName() + ".txt");
+		try {
+			Scanner input = new Scanner(f);
+			getData(input);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		fx1 = new double[planets.size()];
+		fy1 = new double[planets.size()];
 	}
 
 	public static void getData(Scanner input) {

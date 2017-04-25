@@ -134,6 +134,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	private static TreeSet<Integer> keysDown = new TreeSet<Integer>();
 
 	private static String name = "8star-rotation";
+	private static boolean change = false;
 
 	// not instantiable
 	private StdDraw() {
@@ -247,6 +248,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "3body";
+				change = true;
 			}
 		});
 
@@ -521,6 +523,16 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 	public static String getName() {
 		return name;
+	}
+	
+	public static boolean getChange()
+	{
+		return change;
+	}
+	
+	public static void setChange(boolean c)
+	{
+		change = c;
 	}
 
 	/*************************************************************************
