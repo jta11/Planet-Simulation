@@ -133,7 +133,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	// set of key codes currently pressed down
 	private static TreeSet<Integer> keysDown = new TreeSet<Integer>();
 
-	private static String name = "planets";
+	private static String name = "8star-rotation";
 
 	// not instantiable
 	private StdDraw() {
@@ -233,71 +233,76 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 				name = "planets";
 			}
 		});
-		// pattern1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P,
-		// Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+		
+		patterns.add(pattern1);
 
-		JMenuItem pattern2 = new JMenuItem("Chaos Blossom");
+		JMenu one = new JMenu("#-E");
+		patterns.add(one);
+		JMenu two = new JMenu("F-P");
+		patterns.add(two);
+		JMenu three = new JMenu("Q-Z");
+		patterns.add(three);
+
+		JMenuItem pattern2 = new JMenuItem("3 Body");
 		pattern2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "3body";
 			}
 		});
-		// pattern2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C,
-		// Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
 
-		JMenuItem pattern3 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern3 = new JMenuItem("8 Star Rotation");
 		pattern3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "8star-rotation";
 			}
 		});
 
-		JMenuItem pattern4 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern4 = new JMenuItem("Antimatter");
 		pattern4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "antimatter";
 			}
 		});
 
-		JMenuItem pattern5 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern5 = new JMenuItem("Armageddon");
 		pattern5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "armageddon";
 			}
 		});
 
-		JMenuItem pattern6 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern6 = new JMenuItem("Atom");
 		pattern6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "atom";
 			}
 		});
 
-		JMenuItem pattern7 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern7 = new JMenuItem("Awesome");
 		pattern7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "awesome";
 			}
 		});
 
-		JMenuItem pattern8 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern8 = new JMenuItem("Binary");
 		pattern8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "binary";
 			}
 		});
 
-		JMenuItem pattern9 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern9 = new JMenuItem("Binary Stars");
 		pattern9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "binaryStars";
 			}
 		});
 
-		JMenuItem pattern10 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern10 = new JMenuItem("Bowling");
 		pattern10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "bowling";
 			}
 		});
 
@@ -308,217 +313,208 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			}
 		});
 
-		JMenuItem pattern12 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern12 = new JMenuItem("Dance 10");
 		pattern12.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "dance10";
 			}
 		});
 
-		JMenuItem pattern13 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern13 = new JMenuItem("Entropy Universe");
 		pattern13.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "entropy-universe";
 			}
 		});
 
-		JMenuItem pattern14 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern14 = new JMenuItem("Four Ellipses");
 		pattern14.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "chaosblossom";
 			}
 		});
 
-		JMenuItem pattern15 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern15 = new JMenuItem("Galaxy");
 		pattern15.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "galaxy";
 			}
 		});
 
-		JMenuItem pattern16 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern16 = new JMenuItem("Hypnosis");
 		pattern16.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "hypnosis";
 			}
 		});
 
-		JMenuItem pattern17 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern17 = new JMenuItem("Illusion");
 		pattern17.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "illusion";
 			}
 		});
 
-		JMenuItem pattern18 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern18 = new JMenuItem("It's a Trap");
 		pattern18.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "its-a-trap";
 			}
 		});
 
-		JMenuItem pattern19 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern19 = new JMenuItem("Kaleidoscope");
 		pattern19.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "kaleidoscope";
 			}
 		});
 
-		JMenuItem pattern20 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern20 = new JMenuItem("Kevin");
 		pattern20.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "kevin";
 			}
 		});
 
-		JMenuItem pattern21 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern21 = new JMenuItem("Massive Squirrel Battle");
 		pattern21.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "massive-squirrel-battle";
 			}
 		});
 
-		JMenuItem pattern22 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern22 = new JMenuItem("Planets Elliptical");
 		pattern22.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "planets-elliptical";
 			}
 		});
 
-		JMenuItem pattern23 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern23 = new JMenuItem("Planets Party");
 		pattern23.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "planetsparty";
 			}
 		});
 
-		JMenuItem pattern24 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern24 = new JMenuItem("Pluto");
 		pattern24.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "pluto";
 			}
 		});
 
-		JMenuItem pattern25 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern25 = new JMenuItem("Quad Stars");
 		pattern25.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "quad-stars";
 			}
 		});
 
-		JMenuItem pattern26 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern26 = new JMenuItem("Renegade");
 		pattern26.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "renegade";
 			}
 		});
 
-		JMenuItem pattern27 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern27 = new JMenuItem("SBH 2");
 		pattern27.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "sbh2";
 			}
 		});
 
-		JMenuItem pattern28 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern28 = new JMenuItem("SBH 3");
 		pattern28.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "sbh3";
 			}
 		});
 
-		JMenuItem pattern29 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern29 = new JMenuItem("Soap Opera");
 		pattern29.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "soap-opera";
 			}
 		});
 
-		JMenuItem pattern30 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern30 = new JMenuItem("Spiral");
 		pattern30.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "spiral";
 			}
 		});
 
-		JMenuItem pattern31 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern31 = new JMenuItem("Sun Interference");
 		pattern31.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "suninterference";
 			}
 		});
 
-		JMenuItem pattern32 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern32 = new JMenuItem("Twin Binaries");
 		pattern32.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "twin-binaries";
 			}
 		});
 
-		JMenuItem pattern33 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern33 = new JMenuItem("Uniform 3");
 		pattern33.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "chaosblossom";
 			}
 		});
 
-		JMenuItem pattern34 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern34 = new JMenuItem("Uniform 8");
 		pattern34.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "uniform8";
 			}
 		});
 
-		JMenuItem pattern35 = new JMenuItem("Chaos Blossom");
+		JMenuItem pattern35 = new JMenuItem("Uniform 100");
 		pattern35.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "uniform100";
 			}
 		});
 
-		JMenuItem pattern36 = new JMenuItem("Chaos Blossom");
-		pattern36.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
-			}
-		});
-
-		patterns.add(pattern1);
-		patterns.add(pattern2);
-		patterns.add(pattern3);
-		patterns.add(pattern4);
-		patterns.add(pattern5);
-		patterns.add(pattern6);
-		patterns.add(pattern7);
-		patterns.add(pattern8);
-		patterns.add(pattern9);
-		patterns.add(pattern10);
-		patterns.add(pattern11);
-		patterns.add(pattern12);
-		patterns.add(pattern13);
-		patterns.add(pattern14);
-		patterns.add(pattern15);
-		patterns.add(pattern16);
-		patterns.add(pattern17);
-		patterns.add(pattern18);
-		patterns.add(pattern19);
-		patterns.add(pattern20);
-		patterns.add(pattern21);
-		patterns.add(pattern22);
-		patterns.add(pattern23);
-		patterns.add(pattern24);
-		patterns.add(pattern25);
-		patterns.add(pattern26);
-		patterns.add(pattern27);
-		patterns.add(pattern28);
-		patterns.add(pattern29);
-		patterns.add(pattern30);
-		patterns.add(pattern31);
-		patterns.add(pattern32);
-		patterns.add(pattern33);
-		patterns.add(pattern34);
-		patterns.add(pattern35);
-		patterns.add(pattern36);
+		one.add(pattern2);
+		one.add(pattern3);
+		one.add(pattern4);
+		one.add(pattern5);
+		one.add(pattern6);
+		one.add(pattern7);
+		one.add(pattern8);
+		one.add(pattern9);
+		one.add(pattern10);
+		one.add(pattern11);
+		one.add(pattern12);
+		one.add(pattern13);
+		two.add(pattern14);
+		two.add(pattern15);
+		two.add(pattern16);
+		two.add(pattern17);
+		two.add(pattern18);
+		two.add(pattern19);
+		two.add(pattern20);
+		two.add(pattern21);
+		two.add(pattern22);
+		two.add(pattern23);
+		two.add(pattern24);
+		two.add(pattern25);
+		three.add(pattern26);
+		three.add(pattern27);
+		three.add(pattern28);
+		three.add(pattern29);
+		three.add(pattern30);
+		three.add(pattern31);
+		three.add(pattern32);
+		three.add(pattern33);
+		three.add(pattern34);
+		three.add(pattern35);
 
 		return menuBar;
 	}
