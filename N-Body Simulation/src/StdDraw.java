@@ -133,7 +133,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	// set of key codes currently pressed down
 	private static TreeSet<Integer> keysDown = new TreeSet<Integer>();
 
-	private static String name = "8star-rotation";
+	private static String name = "planets";
 	private static boolean change = false;
 
 	// not instantiable
@@ -217,13 +217,13 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	// create the menu bar (changed to private)
 	private static JMenuBar createMenuBar() {
 		JMenuBar menuBar = new JMenuBar();
-		JMenu menu = new JMenu("File");
-		menuBar.add(menu);
-		JMenuItem menuItem1 = new JMenuItem(" Save...   ");
-		menuItem1.addActionListener(std);
-		menuItem1.setAccelerator(
-				KeyStroke.getKeyStroke(KeyEvent.VK_S, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
-		menu.add(menuItem1);
+		// JMenu menu = new JMenu("File");
+		// menuBar.add(menu);
+		// JMenuItem menuItem1 = new JMenuItem(" Save... ");
+		// menuItem1.addActionListener(std);
+		// menuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,
+		// Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+		// menu.add(menuItem1);
 
 		JMenu patterns = new JMenu("Pattern");
 		menuBar.add(patterns);
@@ -232,9 +232,10 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "planets";
+				change = true;
 			}
 		});
-		
+
 		patterns.add(pattern1);
 
 		JMenu one = new JMenu("#-E");
@@ -256,6 +257,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "8star-rotation";
+				change = true;
 			}
 		});
 
@@ -263,6 +265,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "antimatter";
+				change = true;
 			}
 		});
 
@@ -270,6 +273,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "armageddon";
+				change = true;
 			}
 		});
 
@@ -277,6 +281,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "atom";
+				change = true;
 			}
 		});
 
@@ -284,6 +289,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "awesome";
+				change = true;
 			}
 		});
 
@@ -291,6 +297,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "binary";
+				change = true;
 			}
 		});
 
@@ -298,6 +305,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "binaryStars";
+				change = true;
 			}
 		});
 
@@ -305,6 +313,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "bowling";
+				change = true;
 			}
 		});
 
@@ -312,6 +321,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern11.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "chaosblossom";
+				change = true;
 			}
 		});
 
@@ -319,6 +329,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern12.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "dance10";
+				change = true;
 			}
 		});
 
@@ -326,6 +337,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern13.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "entropy-universe";
+				change = true;
 			}
 		});
 
@@ -333,6 +345,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern14.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "chaosblossom";
+				change = true;
 			}
 		});
 
@@ -340,6 +353,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern15.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "galaxy";
+				change = true;
 			}
 		});
 
@@ -347,6 +361,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern16.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "hypnosis";
+				change = true;
 			}
 		});
 
@@ -354,6 +369,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern17.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "illusion";
+				change = true;
 			}
 		});
 
@@ -361,6 +377,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern18.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "its-a-trap";
+				change = true;
 			}
 		});
 
@@ -368,6 +385,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern19.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "kaleidoscope";
+				change = true;
 			}
 		});
 
@@ -375,6 +393,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern20.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "kevin";
+				change = true;
 			}
 		});
 
@@ -382,6 +401,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern21.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "massive-squirrel-battle";
+				change = true;
 			}
 		});
 
@@ -389,6 +409,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern22.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "planets-elliptical";
+				change = true;
 			}
 		});
 
@@ -396,6 +417,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern23.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "planetsparty";
+				change = true;
 			}
 		});
 
@@ -403,6 +425,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern24.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "pluto";
+				change = true;
 			}
 		});
 
@@ -410,6 +433,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern25.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "quad-stars";
+				change = true;
 			}
 		});
 
@@ -417,6 +441,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern26.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "renegade";
+				change = true;
 			}
 		});
 
@@ -424,6 +449,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern27.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "sbh2";
+				change = true;
 			}
 		});
 
@@ -431,6 +457,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern28.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "sbh3";
+				change = true;
 			}
 		});
 
@@ -438,6 +465,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern29.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "soap-opera";
+				change = true;
 			}
 		});
 
@@ -445,6 +473,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern30.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "spiral";
+				change = true;
 			}
 		});
 
@@ -452,6 +481,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern31.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "suninterference";
+				change = true;
 			}
 		});
 
@@ -459,6 +489,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern32.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "twin-binaries";
+				change = true;
 			}
 		});
 
@@ -466,6 +497,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern33.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "chaosblossom";
+				change = true;
 			}
 		});
 
@@ -473,6 +505,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern34.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "uniform8";
+				change = true;
 			}
 		});
 
@@ -480,6 +513,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		pattern35.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				name = "uniform100";
+				change = true;
 			}
 		});
 
@@ -524,14 +558,12 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	public static String getName() {
 		return name;
 	}
-	
-	public static boolean getChange()
-	{
+
+	public static boolean getChange() {
 		return change;
 	}
-	
-	public static void setChange(boolean c)
-	{
+
+	public static void setChange(boolean c) {
 		change = c;
 	}
 
