@@ -344,7 +344,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		JMenuItem pattern14 = new JMenuItem("Four Ellipses");
 		pattern14.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "fourellipses";
 				change = true;
 			}
 		});
