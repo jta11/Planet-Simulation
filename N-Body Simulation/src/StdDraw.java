@@ -240,9 +240,9 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 		JMenu one = new JMenu("#-E");
 		patterns.add(one);
-		JMenu two = new JMenu("F-P");
+		JMenu two = new JMenu("F-Q");
 		patterns.add(two);
-		JMenu three = new JMenu("Q-Z");
+		JMenu three = new JMenu("R-Z");
 		patterns.add(three);
 
 		JMenuItem pattern2 = new JMenuItem("3 Body");
@@ -496,7 +496,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		JMenuItem pattern33 = new JMenuItem("Uniform 3");
 		pattern33.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
-				name = "chaosblossom";
+				name = "uniform3";
 				change = true;
 			}
 		});
