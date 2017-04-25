@@ -1001,9 +1001,3 @@
 2.49E11 0.0 0.0 49100.339851104654 1.2048192771084337E9 star.gif
 2.495E11 0.0 0.0 49051.11644038386 1.2024048096192384E9 star.gif
 2.5E11 0.0 0.0 49002.040773829 1.2E9 star.gif
-
-
-Creator of universe: Matt Tilghman, COS 126, Spring 2006
-
-Spiral formation of a galaxy slowly change into more of a cluster
-from the inside-out. 
