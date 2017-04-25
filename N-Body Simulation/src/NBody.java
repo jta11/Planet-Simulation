@@ -18,7 +18,7 @@ public class NBody {
 	private static double radius;
 	//private static int T = (int) 1000000;
 	private static int dt = 25000;
-
+	private static String[] names = {"3body", "8star-rotation", "antimatter", "armegeddon", "atom", "awesome", "binary", "binaryStars", "chaosblossom", "dance10", "entropy-universe", "forellipses", "galaxy", "hypnosis", "illusion", "its-a-trap", "kaleidoscope", "kevin", "massive-squirrel-battle", "planets", "planets-elliptical", "planetsparty", "pluto", "quad-stars", "renegade", "sbh2", "sbh3", "soap-opera", "suninterference", "twin-binaries", "uniform3", "uniform8", "uniform100"};
 	private static final double G = 6.67 * Math.pow(10, -11);
 
 	public static void main(String[] args) {
